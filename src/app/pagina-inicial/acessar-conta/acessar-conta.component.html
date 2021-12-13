@@ -1,0 +1,19 @@
+<section class="container">
+  <h1 class="titulo">ACESSAR CONTA</h1>
+  <form [formGroup]="loginForm" class="formulario">
+    <div class="form-field">
+      <label class="form-field__label" for="conta">Conta</label>
+      <input formControlName="conta" class="form-field__input" id="conta" autofocus>
+    </div>
+
+    <div class="form-field">
+      <label class="form-field__label" for="senha">Senha</label>
+      <input formControlName="senha" type="password" class="form-field__input" id="senha">
+    </div>
+
+    <button [disabled]="loginForm.invalid" type="submit" class="botao">Entrar</button>
+  </form>
+</section>
+
+<p class="new-account">Não é cliente? <a href="http://localhost:4200/pagina-inicial/criar-conta" class="new-account__link">Crie sua conta agora!</a></p>
+
